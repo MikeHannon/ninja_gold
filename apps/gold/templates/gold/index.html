@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Gold Land</title>
+</head>
+<body>
+  <h1> Gold: {{req.session.gold}}</h1>
+  <a href='/farm'>Farm</a>
+  <a href='/house'>hous</a>
+  <a href='/casino'>casino</a>
+  <a href='/cave'>cave</a>
+  <textarea>
+    {% for event in req.session.events%}
+    {{event}}
+    {% endfor %}
+  </textarea>
+</body>
+</html>
